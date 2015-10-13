@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Platformer" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Platformer" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Platformer" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="deps/include" />
+		</Compiler>
+		<Linker>
+			<Add option="-lmingw32 -lSDL2main -lSDL2 -lSDL2_image" />
+			<Add directory="deps/lib" />
+		</Linker>
+		<Unit filename="include/AnimatedSprite.h" />
+		<Unit filename="include/Game.h" />
+		<Unit filename="include/Graphics.h" />
+		<Unit filename="include/Input.h" />
+		<Unit filename="include/Player.h" />
+		<Unit filename="include/Sprite.h" />
+		<Unit filename="include/globals.h" />
+		<Unit filename="sprites/MyChar.png" />
+		<Unit filename="src/AnimatedSprite.cpp" />
+		<Unit filename="src/Game.cpp" />
+		<Unit filename="src/Graphics.cpp" />
+		<Unit filename="src/Input.cpp" />
+		<Unit filename="src/Player.cpp" />
+		<Unit filename="src/Sprite.cpp" />
+		<Unit filename="src/main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
